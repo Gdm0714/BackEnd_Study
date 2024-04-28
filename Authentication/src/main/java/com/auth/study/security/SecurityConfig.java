@@ -31,7 +31,7 @@ public class SecurityConfig {
                 //.headers(headers -> headers.frameOptions().sameOrigin())	// H2 콘솔 사용을 위한 설정
                 .authorizeHttpRequests(requests ->
                         requests.requestMatchers(allowedUrls).permitAll()
-                                //.requestMatchers("/admin/admins").hasAuthority("ADMIN")// requestMatchers의 인자로 전달된 url은 모두에게 허용
+                                .requestMatchers("/admin/members", "/admin/admins").hasAuthority("ADMIN")// requestMatchers의 인자로 전달된 url은 모두에게 허용
                 //                .requestMatchers(PathRequest.toH2Console()).permitAll()	// H2 콘솔 접속은 모두에게 허용
                                 .anyRequest().authenticated()	// 그 외의 모든 요청은 인증 필요
                 )

@@ -34,9 +34,7 @@ public class Member {
     private LocalDateTime createdAt;
 
     @Id
-    @SequenceGenerator(name = "member_id_seq",
-    sequenceName = "idx_member",
-    allocationSize = 1)
+    @SequenceGenerator(name = "member_id_seq", sequenceName = "idx_member", allocationSize = 1)
     @GeneratedValue
     private BigInteger id;
 
