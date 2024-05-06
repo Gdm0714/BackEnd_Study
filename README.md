@@ -1,4 +1,4 @@
-# BackEnd 지식을 쌓기 위한 스터디
+# BackEnd tech study
 
 | 강의명 | 강사명 |
 :---: | :---:
